@@ -32,6 +32,25 @@
                 <img src="css/images/home.png" alt="Home" class="home-icon">
                 <span class="home_text">HOME</span>
             </button>
+            <button id="theme-toggle">🌙</button>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                const themeToggle = document.getElementById("theme-toggle");
+                const currentTheme = localStorage.getItem("theme");
+
+                if (currentTheme === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+
+                themeToggle.addEventListener("click", () => {
+                    document.body.classList.toggle("dark-mode");
+                    let theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+                    localStorage.setItem("theme", theme);
+                });
+            });
+
+            </script>
+
 
             <script>
                 document.querySelector('.home').addEventListener('click', function() {
@@ -52,6 +71,8 @@
                     window.location.href = 'usersbook.html';
                 });
             </script>
+
+
 
 
             
