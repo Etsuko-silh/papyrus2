@@ -32,30 +32,33 @@
                 <img src="css/images/home.png" alt="Home" class="home-icon">
                 <span class="home_text">HOME</span>
             </button>
-            <button id="theme-toggle">🌙</button>
+            <script>
+                document.querySelector('.home').addEventListener('click', function() {
+                    window.location.href = 'student_page.php';
+                });
+            </script>
+            <button id="theme-toggle">
+                <img src="css/images/theme-icon.png" alt="Theme Icon" class="theme-icon">
+                <span class="home_text">THEME</span>
+            </button>
+
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
                 const themeToggle = document.getElementById("theme-toggle");
                 const currentTheme = localStorage.getItem("theme");
 
                 if (currentTheme === "dark") {
-                    document.body.classList.add("dark-mode");
+                    document.documentElement.classList.add("dark-mode");
                 }
 
                 themeToggle.addEventListener("click", () => {
-                    document.body.classList.toggle("dark-mode");
-                    let theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+                    document.documentElement.classList.toggle("dark-mode");
+                    let theme = document.documentElement.classList.contains("dark-mode") ? "dark" : "light";
                     localStorage.setItem("theme", theme);
                 });
             });
 
-            </script>
 
-
-            <script>
-                document.querySelector('.home').addEventListener('click', function() {
-                    window.location.href = 'student_page.php';
-                });
             </script>
             <button class="notifications">
                 <img src="css/images/notifications.png" alt="Notifications" class="notifications-icon">
