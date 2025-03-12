@@ -1,0 +1,16 @@
+// main: ../styles.less
+
+.content {
+    width: calc(100% - 280px); /* Учитываем aside */
+    height: calc(100% - 108px); /* Учитываем header */
+    margin-left: 280px; /* Отодвигаем вправо */
+    margin-top: 108px; /* Чтобы не перекрывал header */
+    display: flex;
+    flex-wrap: wrap; /* Делаем книги в виде плитки */
+    overflow-y: auto; /* Прокрутка если не влезает */
+    gap: 30px; /* Расстояние между книгами */
+    
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+}

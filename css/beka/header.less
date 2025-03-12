@@ -1,0 +1,40 @@
+// main: ../styles.less
+
+.header {
+    width: calc(100% - 280px); /* Занимает всю ширину, кроме aside */
+    height: 108px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    //background: #ff0c0c;
+    //color: #ff1515;
+    display: flex;
+    align-items: center;
+    //padding: 0 20px;
+    //box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.header h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700; /* Жирный стиль */
+    text-align: center;
+    color: #000;
+    margin-left: 60px;
+}
+
+
+.header_inner {
+    width: calc(100% - 280px);
+    height: 60px;
+    position: fixed;
+    background: #ffffff;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+

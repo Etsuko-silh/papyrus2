@@ -1,0 +1,60 @@
+// main: ../styles.less
+
+.aside_header{
+    width: 280px;
+    height: 108px;
+    padding-top: 10px;
+    background: #fff;
+    //box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    border-bottom: 2px solid #e0e0e0;
+
+    display: flex; /* Размещаем элементы в строку */
+    align-items: flex-start; /* Выравниваем элементы по вертикали */
+    justify-content: center; /* Центрируем содержимое */
+}
+
+.logo-icon {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px; /* Отступ справа от логотипа */
+}
+
+.aside_header h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700; /* Жирный стиль */
+    text-align: center;
+    color: #000;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #ffffff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    
+    display: flex; 
+    flex-direction: column; /* Выравнивание элементов в колонку */
+    align-items: center; /* Центрирование содержимого */
+}
+
+.fixed-box {
+    width: 280px;
+    height: 154px;
+    //margin-bottom: 10px;
+    background: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 2px solid #e0e0e0;
+    //padding-bottom: 10px;
+    //justify-content: center;
+    //box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+

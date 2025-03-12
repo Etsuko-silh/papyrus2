@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta name="author" content="Deeshka">
+            <meta name="description" content="project">
+            <!--Viewport settings-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Fizbook</title>
+            <!--font-->
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet">
+            
+            <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <div>
+        <aside class="sidebar">
+            <div class="aside_header">
+            <img src="css/images/logo.png" alt="Logo" class="logo-icon">
+            <h2>Papyrus</h2>
+
+            </div>
+
+            <div id="selected-book"></div>
+            <button class="home">
+                <img src="css/images/home.png" alt="Home" class="home-icon">
+                <span class="home_text">HOME</span>
+            </button>
+
+            <script>
+                document.querySelector('.home').addEventListener('click', function() {
+                    window.location.href = 'student_page.php';
+                });
+            </script>
+            <button class="notifications">
+                <img src="css/images/notifications.png" alt="Notifications" class="notifications-icon">
+                <span class="notifications_text">Notifications</span>
+            </button>
+            
+            <div class="fixed-box">
+                <button class="about">
+                    <img src="css/images/about.png" alt="About" class="about-icon">
+                    <span class="about_text">About</span>     
+                </button>
+
+                <script>
+                    document.querySelector('.about').addEventListener('click', function() {
+                        window.location.href = 'about_us.html';
+                    });
+                </script>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nuradi.baiseitov26@fizmat.kz" target="_blank" class="help">
+                    <img src="css/images/help.png" alt="Help" class="help-icon">
+                    <span class="help_text">Help</span>     
+                </a>
+
+                <button class="app_version">
+                    <img src="css/images/app_version.png" alt="App_version" class="app_version-icon">
+                    <span class="app_version_text">App version</span>     
+                </button>
+            </div>
+        </aside>
+
+        <header class="header">
+            <div class="header_inner">
+                <h3>About</h3>
+                
+            </div>
+        </header>
+            <div class="content_about">
+            <h2>📚 About Papyrus</h2>
+
+            <p><strong>Papyrus</strong> is a modern library for students, offering the best textbooks in mathematics, physics, computer science, English, and other subjects. Here, you will find study materials for middle and high school students to help you prepare for classes, competitions, and exams.</p>
+
+            <h3>🔍 What do we offer?</h3>
+            <ul>
+                    <li>A large collection of textbooks in PDF format</li>
+                    <li>Easy navigation by categories</li>
+                    <li>Fast search for the right materials</li>
+                    <li>Free textbook downloads</li>
+            </ul>
+
+            <h3>💡 Who is this site for?</h3>
+            <p>For students, teachers, and anyone eager to learn!</p>
+
+            <h3>📥 How to use it?</h3>
+            <p>Just choose a subject, find a book, click <strong>"Download PDF"</strong> — and the textbook is yours!</p>
+
+            <p><strong>Papyrus — knowledge without limits! 🚀</strong></p>
+        </div>
+        <script src="filter.js"></script>
+        <script src="navigation_bar.js"></script>
+        <script src="script.js"></script>
+        <script src="search.js"></script>
+    </body>
+</html>

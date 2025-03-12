@@ -1,0 +1,35 @@
+// main: ../styles.less
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Выравнивание влево */
+    width: 100%;
+    height: 48px;
+    background: transparent; /* Без фона */
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    gap: 9px; /* Расстояние между иконкой и текстом */
+    padding-left: 60px; /* Отступ от левого края */
+}
+
+.home:hover {
+    background: #f0f0f0;
+}
+
+.home-icon {
+    height: 24px;
+    width: auto;
+}
+
+.home_text {
+    font-size: 16px; /* Размер текста */
+    color: #000; /* Черный цвет */
+    font-weight: 500;
+    //font-weight: bold; /* Если нужен жирный текст */
+    font-family: 'Montserrat', sans-serif; /* Применяем Montserrat */
+}
